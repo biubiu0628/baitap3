@@ -1,0 +1,128 @@
+body {
+    background-color: #F2F2F2;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+h2,
+p {
+    color: white;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.8;
+    font-size: 12.5px;
+}
+
+.container {
+    height: 500px;
+}
+
+.sedans {
+    background-color: #e38525;
+    width: 200px;
+    padding: 3rem;
+}
+
+.suvs {
+    background-color: #016972;
+    width: 200px;
+    padding: 3rem;
+}
+
+.luxury {
+    background-color: #00403F;
+    width: 200px;
+    padding: 3rem;
+}
+
+button {
+    border-radius: 30px;
+    padding: 14px 30px;
+    margin-top: 5rem;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#bt1 {
+    border: 2px solid #DA9B58;
+    color: #e38525;
+}
+
+#bt1:hover {
+    border: 2px solid #F2F2F2;
+    background-color: #e38525;
+    color: #F2F2F2;
+}
+
+#bt2 {
+    border: 2px solid #026B73;
+    color: #016972;
+}
+
+#bt2:hover {
+    border: 2px solid #F2F2F2;
+    background-color: #016972;
+    color: #F2F2F2;
+}
+
+#bt3 {
+    border: 2px solid #0B3D40;
+    color: #00403F;
+}
+
+#bt3:hover {
+    border: 2px solid #F2F2F2;
+    background-color: #00403F;
+    color: #F2F2F2;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .sedans {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .luxury {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        width: unset;
+        height: unset;
+    }
+    .container{
+        padding-block: 1rem;
+        padding-inline: 0.5rem;
+    }
+    .sedans {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
