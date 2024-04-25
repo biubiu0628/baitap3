@@ -51,12 +51,6 @@ button {
     margin-top: 5rem;
 }
 
-.center {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 #bt1 {
     border: 2px solid #DA9B58;
     color: #e38525;
